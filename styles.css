@@ -1,0 +1,24 @@
+body{
+    color: chocolate;
+    background-color: black;
+    border: 2px solid blue;
+    width: 50em;
+    margin: 1em auto;
+    padding:1em;
+}
+h1{
+    color: greenyellow;
+    font-family: fantasy;
+}
+h2{
+    color: chartreuse;
+    font-family: fantasy  
+}
+p{
+    color: chocolate;
+    font-size: 2em
+    
+}
+.lennon p{
+    font: italic
+}
