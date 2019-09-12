@@ -1,0 +1,9 @@
+* {
+    box-sizing: border-box;
+}
+body{
+    border: 2px solid blue;
+    max-width: 50em;
+    margin: 1em auto;
+    padding:1em;
+}
