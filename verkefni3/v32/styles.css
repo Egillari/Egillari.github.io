@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+}
+.body{
+    max-width: 60em;
+    margin: 1em auto;
+    font-family: 'Turret Road', cursive;
+    background-color: #66ff66
+}
+/* - - GRID AREA - - */
+
+.haus {
+    grid-area: haus;
+}
+.topnav{
+    grid-area: topnav;
+}
+.main{
+    grid-area: main;
+}
+.foot{
+    grid-area: foot;
+
+}
+/* - -  dálkar í main - - */
+.as1{
+    grid-area: as1; 
+}
+.as2{
+    grid-area: as2; 
+    border-bottom: 1px solid blue;
+}
+.art{
+    grid-area: art;
+    border-right: 1px solid blue;
+    padding-right: 1em;
+}
+/* - -  template area - - */
+.body{
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: 
+        "topnav"
+        "haus"
+        "main"
+        "foot"
+}
+.main{
+    display: grid;
+    grid-gap:2em;
+    grid-template-areas: 
+        "art as2 as2"
+        "art as1 as1";
+    grid-template-columns: 3fr 1fr 1fr;
+    padding: 0 2em;
+    background-color: #99ccff;
+}
+/* - - topmenu - -*/
+.topmenu , .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0 ;
+    background-color: #66ff33;
+}
+.topmenu li , .footmenu li{
+    list-style-type: none;
+}
+.haus{
+    text-align: center;
+    background-color: #6699ff;
+}
+.as1 , .as2 , .art{
+    text-align: center;
+}

@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+}
+.body{
+    max-width: 60em;
+    margin: 1em auto;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: #F58711;
+}
+h1,h3,h2{
+    font-family: 'Maven Pro', sans-serif;
+}
+/* - - GRID AREA - - */
+
+.haus {
+    grid-area: haus;
+    color: white;
+    background-color: #F5B921;
+    text-align: center;
+}
+.topnav{
+    grid-area: topnav;
+}
+.main{
+    grid-area: main;
+}
+.foot{
+    grid-area: foot;
+
+}
+/* - -  dálkar í main - - */
+.as1{
+    grid-area: as1; 
+
+    padding-right: 1em; 
+}
+.as2{
+    grid-area: as2; 
+    padding-bottom: 1em;
+}
+.art{
+    grid-area: art;
+}
+/* - -  template area - - */
+.body{
+    display: grid;
+    grid-gap: 0;
+    grid-template-areas: 
+        "haus"
+        "topnav"
+        "main"
+        "foot"
+}
+.main{
+    display: grid;
+    grid-gap:2em;
+    grid-template-areas: 
+        "as1 art art"
+        "as1 as2 as2";
+    grid-template-columns: .7fr 2fr 1fr;
+    padding: 0 2em;
+    background-color: #F58711;
+}
+/* - - topmenu - -*/
+.topmenu , .footmenu{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    margin: 0;
+    padding: 1em 0 ;
+    background-color: #F5B921;
+}
+.topmenu li , .footmenu li{
+    list-style-type: none;
+}
+.footmenu{
+    background-color: #D0AF1A;
+    color: black;
+}
+
+.as1 , .as2 , .art{
+    text-align: center 
+}
+.as2{
+    background-color: #198011;
+}
+.as1{
+    color: white;
+}
+.art{
+    color:white;
+}
