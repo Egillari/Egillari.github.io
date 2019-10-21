@@ -4,11 +4,12 @@ body {
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
-    background-image: linear-gradient(rgb(14, 14, 211), blue, darkblue);
+    background-color: #66ff66 ;
 }
 h1 {
     font-weight: 300;
     font-size: 2.5em;
+    color: #668aff;
 }
 blockquote{
     background-color: rgba(255,255,255, .3);
@@ -18,7 +19,7 @@ blockquote{
     color: #fff;
 }
 .bground {
-    background-image:radial-gradient( rgb(227, 230, 103),rgb(214, 216, 79)  );
+    background-color: #99ccff;
     padding: 1em;
 }
 .container {
@@ -47,10 +48,10 @@ blockquote{
     margin: 2em 0 1em 0;
 }
 .headcolor p{
-    text-align: right;
+    text-align: center;
 }
 .topnav a, .footnav a{
-    color: burlywood;
+    color: #6699ff;
     text-decoration: none;
 }
 .topnav{
@@ -58,6 +59,7 @@ blockquote{
 }
 .footnav {
     padding: 0;
+    color: #6699ff;
 }
 .footnav li{
     list-style-type: none;
@@ -109,9 +111,24 @@ blockquote{
     background-image: linear-gradient(rgba(0,0,255, .8), rgba(32, 32, 201, .8))
 }
 .copy{
-    color:rgb(227, 230, 103);
+    color: #6699ff;;
     text-align: center;
 }
 .vheight{
     height: 75vh;
+}
+.verknav {
+    padding: 0;
+}
+.verknav li{
+    list-style-type: none;
+    padding: 0;
+    line-height: 2;
+}
+.verknav a{
+    color: black;
+    text-decoration: none;
+}
+.verknav a:hover{
+    text-decoration: underline;
 }
