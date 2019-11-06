@@ -5,6 +5,7 @@ body {
     /* font-family: ;*/
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
     background-color: #66ff66 ;
+    font-family: 'Open Sans', sans-serif;
 }
 h1 {
     font-weight: 300;
@@ -131,4 +132,20 @@ blockquote{
 }
 .verknav a:hover{
     text-decoration: underline;
+}
+.imgR{
+    width: 450px
+}
+.imgI{
+        
+    width: 300px;
+}
+.tyler{
+    background-image: url("../Myndir/flame.jpg");
+    padding: 1em 1em 1em 1em;
+    color: white;
+     
+}
+.tyler h1{
+    color:#66ff66;
 }
