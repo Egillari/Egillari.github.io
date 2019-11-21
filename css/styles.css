@@ -191,5 +191,7 @@ blockquote{
         "art2 "
         "art3 ";
     }
-
+    .gap-4{
+        grid-gap: 0;
+    }
 }
