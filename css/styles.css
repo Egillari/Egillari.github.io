@@ -3,6 +3,7 @@
 body {
     margin: 0; /* tek út sjálgefið 10px margin */
     /* font-family: ;*/
+    width: 100%;
     font: 400 1em/1.5 'Open Sans', sans-serif; /* samsett skipun: weight/height, size, family */
     background-color: #66ff66 ;
     font-family: 'Open Sans', sans-serif;
@@ -21,7 +22,8 @@ blockquote{
 }
 .bground {
     background-color: #99ccff;
-    padding: 1em;
+    width: 100%;
+    
 }
 .container {
     max-width: 60em; /*960px = fartölvur*/
@@ -33,7 +35,6 @@ blockquote{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
 .col-3 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -127,7 +128,7 @@ blockquote{
     line-height: 2;
 }
 .verknav a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .verknav a:hover{
@@ -153,4 +154,42 @@ blockquote{
    
     background-color: #59e6ff88;
     padding: 10px;
+}
+.art1{
+    grid-area: art1;
+}
+.art2{
+    grid-area: art2;
+    padding-top: 0em; 
+}
+.art3{
+    grid-area: art3;
+}
+.col-5{
+    display: grid;
+    grid-template-areas:
+    "art1 art3"
+    "art1 art2";
+}
+@media (max-width:450px){
+    .imgI{
+        width: 100%
+    }
+    .col-2{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .col-3{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+    .col-5{
+        display: grid;
+        grid-template-areas:
+        "art1 "
+        "art2 "
+        "art3 ";
+    }
+
 }
