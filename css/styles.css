@@ -44,7 +44,7 @@ blockquote{
     grid-template-columns: repeat(4,1fr);
 }
 .gap-4 {
-    grid-gap: 4em
+    grid-column-gap: 4em
 }
 .headcolor h1{
     margin: 2em 0 1em 0;
@@ -194,4 +194,5 @@ blockquote{
     .gap-4{
         grid-gap: 0;
     }
+
 }
